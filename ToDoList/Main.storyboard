@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Add A Task-->
         <scene sceneID="Dco-lU-NVu">
             <objects>
                 <viewController id="ASh-Op-Nze" sceneMemberID="viewController">
@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, World!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-Nu-BQy">
-                                <rect key="frame" x="96" y="174" width="128" height="25"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-Nu-BQy">
+                                <rect key="frame" x="101" y="174" width="118" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,10 +33,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PXq-4f-Ef9">
-                                <rect key="frame" x="101" y="413" width="118" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTs-cA-GR5">
                                 <rect key="frame" x="83" y="356" width="154" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,27 +43,29 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97119712939134051" blue="0.79091983761385165" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dWa-5m-MZR" firstAttribute="centerX" secondItem="PXq-4f-Ef9" secondAttribute="centerX" id="3Em-DU-WeY"/>
                             <constraint firstItem="LTs-cA-GR5" firstAttribute="top" secondItem="dWa-5m-MZR" secondAttribute="bottom" constant="55" id="Du2-SN-d1K"/>
-                            <constraint firstAttribute="height" secondItem="Sha-Nu-BQy" secondAttribute="height" id="FzI-rr-kbd"/>
+                            <constraint firstAttribute="height" secondItem="Sha-Nu-BQy" secondAttribute="height" constant="544" id="FzI-rr-kbd"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dWa-5m-MZR" secondAttribute="trailing" constant="20" id="KCM-hA-ZeH"/>
                             <constraint firstItem="dWa-5m-MZR" firstAttribute="leading" secondItem="pCt-35-VUS" secondAttribute="leading" constant="20" symbolic="YES" id="Prg-YJ-iSb"/>
                             <constraint firstItem="dWa-5m-MZR" firstAttribute="centerY" secondItem="pCt-35-VUS" secondAttribute="centerY" id="dH1-MB-EgS"/>
                             <constraint firstItem="dWa-5m-MZR" firstAttribute="centerX" secondItem="Sha-Nu-BQy" secondAttribute="centerX" id="e8q-5o-pfV"/>
                             <constraint firstAttribute="centerX" secondItem="Sha-Nu-BQy" secondAttribute="centerX" id="fmC-3O-TZy"/>
-                            <constraint firstItem="Sha-Nu-BQy" firstAttribute="top" secondItem="ZfD-m3-sj4" secondAttribute="bottom" constant="154" id="iVj-Hc-43y"/>
-                            <constraint firstAttribute="centerY" secondItem="Sha-Nu-BQy" secondAttribute="centerY" constant="144.5" id="jvW-53-myc"/>
+                            <constraint firstAttribute="centerY" secondItem="Sha-Nu-BQy" secondAttribute="centerY" constant="97.5" id="jvW-53-myc"/>
                             <constraint firstItem="dWa-5m-MZR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pCt-35-VUS" secondAttribute="leading" constant="20" id="oDG-Kt-dMR"/>
                             <constraint firstItem="dWa-5m-MZR" firstAttribute="centerX" secondItem="LTs-cA-GR5" secondAttribute="centerX" id="x4F-xX-wIF"/>
                             <constraint firstAttribute="trailing" secondItem="dWa-5m-MZR" secondAttribute="trailing" constant="20" symbolic="YES" id="zuf-v6-WgV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add A Task" id="Wsq-gi-OoW">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="SXD-Su-GAm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="FAb-Of-ykb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cN8-fo-TYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1344" y="-9"/>
+            <point key="canvasLocation" x="1870" y="-9"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller - My To-do List-->
         <scene sceneID="UoY-Gb-PqU">
             <objects>
                 <tableViewController id="EuA-9x-5yG" sceneMemberID="viewController">
@@ -94,6 +92,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="iCe-yC-SXu" style="IBUITableViewCellStyleDefault" id="jOJ-cc-mGe">
                                         <rect key="frame" x="0.0" y="108" width="320" height="44"/>
@@ -111,6 +110,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="qkF-ku-ysv" style="IBUITableViewCellStyleDefault" id="4dJ-Xu-hHq">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
@@ -128,6 +128,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="aae-oA-nyc" style="IBUITableViewCellStyleDefault" id="6WU-PT-GSk">
                                         <rect key="frame" x="0.0" y="196" width="320" height="44"/>
@@ -145,6 +146,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fPq-AZ-Nah" style="IBUITableViewCellStyleDefault" id="D4S-8z-BQ9">
                                         <rect key="frame" x="0.0" y="240" width="320" height="44"/>
@@ -162,6 +164,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="a3E-VK-Ydl" style="IBUITableViewCellStyleDefault" id="Qo7-Qc-yLT">
                                         <rect key="frame" x="0.0" y="284" width="320" height="44"/>
@@ -179,6 +182,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="TKV-WL-n7D" style="IBUITableViewCellStyleDefault" id="ifg-oM-2AB">
                                         <rect key="frame" x="0.0" y="328" width="320" height="44"/>
@@ -196,6 +200,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="58L-M6-b4T" style="IBUITableViewCellStyleDefault" id="sl4-qo-UC0">
                                         <rect key="frame" x="0.0" y="372" width="320" height="44"/>
@@ -213,6 +218,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="B4X-Iz-zVO" style="IBUITableViewCellStyleDefault" id="itO-un-nGm">
                                         <rect key="frame" x="0.0" y="416" width="320" height="44"/>
@@ -230,6 +236,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="JMO-Hp-giG" style="IBUITableViewCellStyleDefault" id="lY7-2N-cDX">
                                         <rect key="frame" x="0.0" y="460" width="320" height="44"/>
@@ -247,6 +254,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="rWz-Pt-MLJ" style="IBUITableViewCellStyleDefault" id="M2q-3r-Lhb">
                                         <rect key="frame" x="0.0" y="504" width="320" height="44"/>
@@ -264,6 +272,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="t7V-Io-yQd" style="IBUITableViewCellStyleDefault" id="hDv-Jc-43u">
                                         <rect key="frame" x="0.0" y="548" width="320" height="44"/>
@@ -281,6 +290,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="o9Y-Mt-Kht" style="IBUITableViewCellStyleDefault" id="FXj-UW-wMZ">
                                         <rect key="frame" x="0.0" y="592" width="320" height="44"/>
@@ -298,6 +308,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.97119712940000003" blue="0.79091983759999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -307,7 +318,13 @@
                             <outlet property="delegate" destination="EuA-9x-5yG" id="EYw-sG-sUN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ph5-ND-338"/>
+                    <navigationItem key="navigationItem" title="My To-do List" id="Ph5-ND-338">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="04N-za-g6l">
+                            <connections>
+                                <segue destination="bfY-cO-2bn" kind="modal" id="l7p-RT-K6F"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEy-ja-BYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,6 +347,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1w-H9-cYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="333" y="-9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LTb-yR-3UT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bfY-cO-2bn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j5E-OO-cm4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ASh-Op-Nze" kind="relationship" relationship="rootViewController" id="xY6-U2-gG1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnA-w5-DmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344" y="-9"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
