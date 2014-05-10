@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A33D5EA191DBA0200CD60E2 /* XYZAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A33D5E9191DBA0200CD60E2 /* XYZAddToDoItemViewController.m */; };
+		5A33D5F0191DBC5600CD60E2 /* XYZMyToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A33D5EF191DBC5600CD60E2 /* XYZMyToDoListTableViewController.m */; };
 		5AB2E27E191CD7BE001E9185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB2E27D191CD7BE001E9185 /* Foundation.framework */; };
 		5AB2E280191CD7BE001E9185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB2E27F191CD7BE001E9185 /* CoreGraphics.framework */; };
 		5AB2E282191CD7BE001E9185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB2E281191CD7BE001E9185 /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A33D5E8191DBA0200CD60E2 /* XYZAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZAddToDoItemViewController.h; path = ../XYZAddToDoItemViewController.h; sourceTree = "<group>"; };
+		5A33D5E9191DBA0200CD60E2 /* XYZAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZAddToDoItemViewController.m; path = ../XYZAddToDoItemViewController.m; sourceTree = "<group>"; };
+		5A33D5EE191DBC5600CD60E2 /* XYZMyToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZMyToDoListTableViewController.h; path = ../XYZMyToDoListTableViewController.h; sourceTree = "<group>"; };
+		5A33D5EF191DBC5600CD60E2 /* XYZMyToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZMyToDoListTableViewController.m; path = ../XYZMyToDoListTableViewController.m; sourceTree = "<group>"; };
 		5AB2E27A191CD7BE001E9185 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB2E27D191CD7BE001E9185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5AB2E27F191CD7BE001E9185 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,6 +116,10 @@
 		5AB2E283191CD7BE001E9185 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				5A33D5E8191DBA0200CD60E2 /* XYZAddToDoItemViewController.h */,
+				5A33D5E9191DBA0200CD60E2 /* XYZAddToDoItemViewController.m */,
+				5A33D5EE191DBC5600CD60E2 /* XYZMyToDoListTableViewController.h */,
+				5A33D5EF191DBC5600CD60E2 /* XYZMyToDoListTableViewController.m */,
 				5AB2E28C191CD7BE001E9185 /* XYZAppDelegate.h */,
 				5AB2E28D191CD7BE001E9185 /* XYZAppDelegate.m */,
 				5AB2E2AC191CDB87001E9185 /* Main.storyboard */,
@@ -251,6 +261,8 @@
 			files = (
 				5AB2E28E191CD7BE001E9185 /* XYZAppDelegate.m in Sources */,
 				5AB2E28A191CD7BE001E9185 /* main.m in Sources */,
+				5A33D5EA191DBA0200CD60E2 /* XYZAddToDoItemViewController.m in Sources */,
+				5A33D5F0191DBC5600CD60E2 /* XYZMyToDoListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +465,7 @@
 				5AB2E2A8191CD7BF001E9185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AB2E2A9191CD7BF001E9185 /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +474,7 @@
 				5AB2E2AB191CD7BF001E9185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
